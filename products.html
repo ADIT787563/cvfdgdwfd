@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Freshco Mushroom | Fresh Button Mushrooms, Seeds & Compost</title>
+    <meta name="description" content="Browse our complete range of fresh button mushrooms, organic mushroom seeds, and premium compost. Quality products from Freshco Mushroom Farm in Uttar Pradesh, India.">
+    <meta name="keywords" content="fresh mushrooms, button mushrooms, mushroom seeds, organic compost, Khaga, Fatehpur, Uttar Pradesh, buy mushrooms, organic farming">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Products - Freshco Mushroom | Fresh Button Mushrooms, Seeds & Compost">
+    <meta property="og:description" content="Browse our complete range of fresh button mushrooms, organic mushroom seeds, and premium compost.">
+    <meta property="og:url" content="https://freshcomushroom.com/products">
+    <meta property="og:site_name" content="Freshco Mushroom">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="attached_assets/button-mushroom-nobg.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Products - Freshco Mushroom | Fresh Button Mushrooms, Seeds & Compost">
+    <meta property="twitter:description" content="Browse our complete range of fresh button mushrooms, organic mushroom seeds, and premium compost.">
+    <meta property="twitter:image" content="attached_assets/button-mushroom-nobg.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://freshcomushroom.com/products">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="attached_assets/freshco_Logo-removebg-preview (1)_1750517234057.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo" style="display: flex; align-items: center;">
+                    <a href="index.html">
+                        <img src="attached_assets/freshco_Logo-removebg-preview (1)_1750517234057.png" alt="Freshco Mushroom Logo" class="logo" style="max-width: 120px; height: auto; display: block; vertical-align: middle;">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Header Icons -->
+                <div class="nav-icons">
+                    <!-- Removed search icon -->
+                    <a href="#wishlist" class="nav-icon">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="#cart" class="nav-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <button class="menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="products.html" class="mobile-nav-link" onclick="closeMobileMenu()">Products</a>
+                <a href="about.html" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                <a href="contact.html" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Products</h1>
+                <p class="page-description">
+                    Discover our complete range of fresh mushrooms, premium seeds, and organic compost
+                </p>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Fresh Button Mushrooms -->
+                    <div class="product-card" data-category="mushrooms">
+                        <div class="product-image">
+                            <img src="attached_assets/image_1750693328754.png" alt="Fresh Button Mushrooms" class="product-img">
+                            <div class="product-badge fresh">Fresh</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Fresh Button Mushrooms', 120)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Fresh Button Mushrooms</h3>
+                            <p class="product-description">
+                                Premium quality button mushrooms harvested daily for maximum freshness and flavor. Perfect for cooking and salads.
+                            </p>
+                            <div class="product-details">
+                                <div class="product-info">
+                                    <span class="info-label">Weight:</span>
+                                    <span class="info-value">1 kg</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">Shelf Life:</span>
+                                    <span class="info-value">7-10 days</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">Storage:</span>
+                                    <span class="info-value">Refrigerate</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">₹120/kg</span>
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Fresh Button Mushrooms', 120)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Mushroom Seeds -->
+                    <div class="product-card" data-category="seeds">
+                        <div class="product-image">
+                            <img src="attached_assets/seed 2_1750523573437.jpg" alt="Button Mushroom Seeds" class="product-img">
+                            <div class="product-badge seeds">Seeds</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Button Mushroom Seeds', 120)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Button Mushroom Seeds</h3>
+                            <p class="product-description">
+                                High-quality seeds for growing your own mushrooms at home with excellent germination rates and detailed growing instructions.
+                            </p>
+                            <div class="product-details">
+                                <div class="product-info">
+                                    <span class="info-label">Pack Size:</span>
+                                    <span class="info-value">50g</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">Germination:</span>
+                                    <span class="info-value">85-90%</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">Growing Time:</span>
+                                    <span class="info-value">3-4 weeks</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">₹120/pack</span>
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Button Mushroom Seeds', 120)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Organic Compost -->
+                    <div class="product-card" data-category="compost">
+                        <div class="product-image">
+                            <img src="attached_assets/harvest_1750523573436.jpg" alt="Organic Compost" class="product-img">
+                            <div class="product-badge organic">Organic</div>
+                            <div class="product-overlay">
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Organic Compost', 50)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Organic Compost</h3>
+                            <p class="product-description">
+                                Nutrient-rich organic compost perfect for growing healthy plants and vegetables. Made from natural materials.
+                            </p>
+                            <div class="product-details">
+                                <div class="product-info">
+                                    <span class="info-label">Weight:</span>
+                                    <span class="info-value">1 kg</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">NPK Ratio:</span>
+                                    <span class="info-value">3-2-2</span>
+                                </div>
+                                <div class="product-info">
+                                    <span class="info-label">Organic:</span>
+                                    <span class="info-value">100%</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">₹50/kg</span>
+                                <button class="btn btn-primary btn-sm add-to-cart" onclick="addToCart('Organic Compost', 50)">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features -->
+        <section class="product-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>100% Organic</h3>
+                        <p>All our products are certified organic and grown without harmful chemicals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Quality Assured</h3>
+                        <p>Rigorous quality control processes ensure the highest standards in all our products.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Get growing advice and support from our experienced farming team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="attached_assets/freshco_Logo-removebg-preview (1)_1750517234057.png" alt="Freshco Mushroom" class="footer-logo">
+                    <p>Premium fresh mushrooms, organic seeds, and compost from our sustainable farm to your table.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1AorGjSos9/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/freshcomushroom?igsh=MWU3bW56aTc3NHBrOQ==" class="social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Fresh Mushrooms</a></li>
+                        <li><a href="products.html">Mushroom Seeds</a></li>
+                        <li><a href="products.html">Organic Compost</a></li>
+                        <li><a href="products.html">Growing Kits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Khaga, Fatehpur, UP, India</p>
+                        <p><i class="fas fa-envelope"></i> anshkumar590423@gmail.com</p>
+                        <p><i class="fas fa-envelope"></i> himanshu948592Qgmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Freshco Mushroom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" onclick="closeCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="checkout()">
+                Checkout
+                <i class="fas fa-credit-card"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Product filtering functionality
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.product-card');
+            const tabs = document.querySelectorAll('.category-tab');
+            
+            // Update active tab
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter products
+            products.forEach(product => {
+                if (category === 'all' || product.dataset.category === category) {
+                    product.style.display = 'block';
+                    product.style.animation = 'fadeInUp 0.6s ease';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html> 
